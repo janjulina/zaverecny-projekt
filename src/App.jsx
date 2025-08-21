@@ -8,18 +8,20 @@ function App() {
 
   return (
     <>
+    <div className="city-select-container">
+    <label htmlFor="city" className="city-select-label">Vyber město:</label>
      <select value={city} onChange={(event) => setCity(event.target.value)}>
       <option>Praha</option>
       <option>Brno</option>
       <option>Ostrava</option>
       <option>Sydney</option>
       <option>Bukurešť</option>
-      <option>Vídeň</option>
-      <option>Valencie</option>
+      <option>Valencia</option>
       <option>Bratislava</option>
       <option>Košice</option>
 
      </select>
+     </div>
       
      <Weather city={city}/>
     </>
